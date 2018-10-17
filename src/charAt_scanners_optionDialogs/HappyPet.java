@@ -65,13 +65,13 @@ public class HappyPet {
 		return "this should never appear";
 	}
 	static void feedPet() {
-		JOptionPane.showMessageDialog(null, petMessage("You pour some food into your cat's bowl. It walks over cheerfully and eats it all up.\n<h3>+2 Happiness</h3></html>", "<html>You toss a bundle of hay to your rabbit, which it consumes.\n<h3>+2 Happiness</h3></html>", "<html>The sacrifice is brought forth. Bound by ropes, they are dragged into the hulking mouth of your <i>pet</i>. It roars miserably, and though you regret the loss of an innocent life, your pet's satisfaction makes it all worth it.\n<h3>+???? Happiness</h3></html>"));
+		JOptionPane.showMessageDialog(null, petMessage("You pour some food into your cat's bowl.\nIt walks over cheerfully and eats it all up.\n+2 Happiness", "You toss a bundle of hay to your rabbit, which it consumes.\n+2 Happiness", "<html>The sacrifice is brought forth. Bound by ropes, they are dragged into the hulking mouth of your <i>pet</i>.\nt roars miserably, and though you regret the loss of an innocent life, your pet's satisfaction makes it all worth it.\n+???? Happiness"));
 		pethappy += 2;
 	}
 	static void cuddlePet() {
-		JOptionPane.showMessageDialog(null, petMessage("<html>You cuddle with your cat for a while, petting its soft fur. It purrs, happily.\n<h3>+2 Happiness</h3></html>", "<html>\n<h3>+2 Happiness</h3></html>", "<html>\n<h3>+2 Happiness</h3></html>"));
+		JOptionPane.showMessageDialog(null,petMessage("You cuddle with your cat for a while, petting its soft fur. It purrs, happily.\n+2 Happiness", "\n+2 Happiness", "\n+2 Happiness"));
 	}
 	static void walkPet() {
-		JOptionPane.showMessageDialog(null, petMessage("<html>\n<h3>+2 Happiness</h3></html>", "<html>\n<h3>+2 Happiness</h3></html>", "<html>\n<h3>+2 Happiness</h3></html>"));
+		JOptionPane.showMessageDialog(null, petMessage("\n+2 Happiness", "\n+2 Happiness", "\n+2 Happiness"));
 	}
 }
